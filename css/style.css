@@ -873,6 +873,7 @@ footer h3 {
         -ms-flex-align: start;
             align-items: flex-start;
     color: gray;
+    background-image: url(/img/header1.jpg);
   }
   .container h1 {
     width: 100%;
