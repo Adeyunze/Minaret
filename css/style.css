@@ -540,6 +540,9 @@ article .about-history img {
   width: 50%;
   height: 100%;
 }
+.refer div {
+  padding-left: 50px;
+}
 
 .refer div h1 {
   font-weight: 500;
