@@ -690,7 +690,8 @@ article .about-history img {
   }
 }
 
-.images {
+.images,
+.independence-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,14 +709,16 @@ article .about-history img {
       flex-wrap: wrap;
 }
 
-.images img {
+.images img,
+.independence-images img {
   width: 50%;
   height: 50%;
   border-radius: 5px;
 }
 
 @media (max-width: 800px) {
-  .images {
+  .images,
+  .independence-images {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -730,7 +733,8 @@ article .about-history img {
         -ms-flex-align: center;
             align-items: center;
   }
-  .images img {
+  .images img,
+  .independence-images img {
     width: 100%;
   }
 }
