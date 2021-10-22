@@ -540,9 +540,6 @@ article .about-history img {
   width: 50%;
   height: 100%;
 }
-.refer div {
-  padding-left: 50px;
-}
 
 .refer div h1 {
   font-weight: 500;
@@ -843,7 +840,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
 }
 
 footer .socials {
@@ -1142,3 +1138,85 @@ footer h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.about_links .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1DA1F2;
+  color: white;
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  padding: 20px 0px;
+}
+
+.about_links .box a {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_links .box a h2 {
+  padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .about {
+    padding: 0px 20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .about h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .about p {
+    font-size: 14px;
+  }
+  .about_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about_links .box {
+    min-width: 70%;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
