@@ -517,6 +517,84 @@ article .about-history img {
   }
 }
 
+.refer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: #ebebeb;
+  padding: 0px 150px;
+}
+
+.refer img {
+  width: 50%;
+  height: 100%;
+}
+
+.refer div h1 {
+  font-weight: 500;
+  color: #2D3047;
+  margin-bottom: 20px;
+}
+
+.refer div a {
+  background-color: #1DA1F2;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.refer div a:hover {
+  background: #FFF;
+  color: #1DA1F2;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+@media (max-width: 800px) {
+  .refer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  .refer img {
+    width: 100%;
+  }
+  .refer div {
+    padding-left: 20px;
+  }
+  .refer div h1 {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+}
+
 .connect {
   font-family: "Poppins", sans-serif;
   display: -webkit-box;
@@ -691,7 +769,8 @@ article .about-history img {
 }
 
 .images,
-.independence-images {
+.independence-images,
+.class-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,7 +789,8 @@ article .about-history img {
 }
 
 .images img,
-.independence-images img {
+.independence-images img,
+.class-images img {
   width: 50%;
   height: 50%;
   border-radius: 5px;
@@ -718,7 +798,8 @@ article .about-history img {
 
 @media (max-width: 800px) {
   .images,
-  .independence-images {
+  .independence-images,
+  .class-images {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -734,7 +815,8 @@ article .about-history img {
             align-items: center;
   }
   .images img,
-  .independence-images img {
+  .independence-images img,
+  .class-images img {
     width: 100%;
   }
 }
@@ -1056,85 +1138,3 @@ footer h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.about_links .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #1DA1F2;
-  color: white;
-  width: 200px;
-  height: 200px;
-  margin-right: 10px;
-  padding: 20px 0px;
-}
-
-.about_links .box a {
-  text-decoration: none;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about_links .box a h2 {
-  padding-top: 20px;
-}
-
-@media (max-width: 800px) {
-  .about {
-    padding: 0px 20px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
-  .about h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .about p {
-    font-size: 14px;
-  }
-  .about_links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about_links .box {
-    min-width: 70%;
-    margin-top: 20px;
-  }
-}
-/*# sourceMappingURL=style.css.map */
