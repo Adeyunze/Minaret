@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$terra-cotta:#E37B6D;
+$fire-opal:#1DA1F2;
+$text-color:#FFF;
+$polished-pine:#6BA292;
+$space-cadet: #2D3047;
+$gray-background: #f0f0f0;
+$light-grey: #949391;
+$active: #949391;
+$font-weights:("extra-light":200,
+"light":300,
+"regular":400,
+"medium": 500,
+"bold": 700,
+"dark": 900);
+$poppins:'Poppins',
+sans-serif;
+@mixin flexCenter($direction,
+$justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin links($color) {
+    text-decoration: none;
+    color: $color;
+    font-family: $poppins;
+    font-weight: map-get($font-weights, "light");
+}
+
+@mixin padding {
+    padding: 0px 150px;
+}
+
+@mixin paddingMobile {
+    padding: 0px 20px;
+}
+
+@mixin padding2 {
+    padding: 0px 100px;
+}
+
+@mixin redBtn {
+    background-color: $fire-opal;
+    padding: 10px 20px;
+    border-radius: 3px;
+    &:hover {
+        background: $text-color;
+        color: $fire-opal;
+        transition: 0.5s all ease;
+    }
+}
+
+@mixin whiteBtn {
+    background-color: $text-color;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: $fire-opal;
+    &:hover {
+        background: $text-color;
+        color: $fire-opal;
+        transition: 0.5s all ease;
+    }
+}
+
+@mixin mobile($mobile) {
+    @media(max-width: $mobile) {
+        @content;
+    }
+}

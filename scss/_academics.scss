@@ -1,0 +1,53 @@
+.academic {
+    @include padding;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    @include flexCenter(column, center);
+    align-items: flex-start;
+    h1 {
+        font-size: 40px;
+        color: $space-cadet;
+        @include flexCenter(row, center);
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        @include mobile(800px) {
+            font-size: 30px;
+        }
+    }
+    @include mobile(800px) {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        @include paddingMobile;
+    }
+}
+
+.acad {
+    h1 {
+        color: white;
+        font-size: 40px;
+        z-index: 2;
+        font-weight: 600;
+    }
+    @include mobile(800px) {
+        font-family: $poppins;
+        background: rgba(0, 0, 0, 0.685);
+        height: 50vh;
+        @include flexCenter(column, center);
+        background-position: center top;
+        background-size: cover;
+        background-image: url(/img/img1.jpg);
+        height: 40vh;
+        &:before {
+            height: 40vh;
+            top: 10vh;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+}

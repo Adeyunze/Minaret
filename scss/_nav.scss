@@ -1,0 +1,94 @@
+nav {
+    @include flexCenter(row, space-between);
+    height: 10vh;
+    background-color: $text-color;
+    @include padding2;
+    position: fixed;
+    width: 100vw;
+    border-bottom: 1px solid $gray-background;
+    z-index: 10;
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        color: $space-cadet;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .nav-links {
+        @include flexCenter(row, space-between);
+        width: 35vw;
+        a {
+            @include links($fire-opal);
+            &:nth-child(5) {
+                @include redBtn;
+                color: $text-color;
+            }
+        }
+        .active {
+            border-bottom: 3px solid $fire-opal;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+                border-bottom: 3px solid $text-color;
+            }
+        }
+    }
+    .burger {
+        display: none;
+    }
+    @include mobile(1200px) {
+        @include paddingMobile;
+        .nav-links {
+            width: 50vw;
+        }
+    }
+    @include mobile(800px) {
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .nav-links {
+            // display: none;
+            transform: translateX(100vw);
+            position: fixed;
+            @include flexCenter(column, flex-start);
+            top: 10vh;
+            height: 90vh;
+            width: 100vw;
+            background: $fire-opal;
+            right: 0;
+            padding-top: 50px;
+            transition: all 0.3s ease-in-out;
+            z-index: 5;
+            a {
+                color: white;
+                font-size: 20px;
+                margin-top: 30px;
+                &:nth-child(5) {
+                    @include whiteBtn;
+                }
+            }
+            .active {
+                border-bottom: 3px solid $text-color;
+                transition: border-bottom 0.5s ease-in-out;
+                &:hover {
+                    border-bottom: 3px solid $fire-opal;
+                }
+            }
+        }
+        .burger {
+            display: block;
+            cursor: pointer;
+            img {
+                width: 20px;
+            }
+        }
+        @include paddingMobile;
+        position:unset;
+        width:100%;
+    }
+}
+
+.nav-links.open {
+    transform: translateX(0vw);
+}
