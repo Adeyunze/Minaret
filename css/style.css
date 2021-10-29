@@ -131,8 +131,11 @@ nav .burger {
     position: unset;
     width: 100%;
   }
+  nav .logo {
+    margin-left: -10vw;
+  }
   nav h1 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 2px;
   }
