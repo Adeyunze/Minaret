@@ -130,7 +130,6 @@ nav .burger {
 
 @media (max-width: 800px) {
   nav {
-    height: 15vh;
     padding: 0px 20px;
     position: unset;
     width: 100%;

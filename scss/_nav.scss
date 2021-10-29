@@ -53,7 +53,6 @@ nav {
         }
     }
     @include mobile(800px) {
-        height: 15vh;
         .logo {
             margin-left: -10%;
             padding-left: 0px;
