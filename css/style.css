@@ -123,6 +123,9 @@ nav .burger {
   nav .nav-links {
     width: 50vw;
   }
+  nav .logo {
+    padding-left: 100px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -132,16 +135,17 @@ nav .burger {
     width: 100%;
   }
   nav .logo {
-    margin-left: -10vw;
+    margin-left: -10%;
+    padding-left: 0px;
   }
   nav h1 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
   }
   nav .nav-links {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
+    -webkit-transform: translateX(110vw);
+            transform: translateX(110vw);
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -194,9 +198,17 @@ nav .burger {
   nav .burger {
     display: block;
     cursor: pointer;
+    padding-left: 50px;
   }
   nav .burger img {
     width: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  nav .logo {
+    margin-left: -20vw;
+    padding-left: 0px;
   }
 }
 
