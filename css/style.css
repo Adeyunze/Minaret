@@ -139,7 +139,7 @@ nav .burger {
     padding-left: 0px;
   }
   nav h1 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 2px;
   }
@@ -198,7 +198,7 @@ nav .burger {
   nav .burger {
     display: block;
     cursor: pointer;
-    padding-left: 50px;
+    padding-left: 10px;
   }
   nav .burger img {
     width: 20px;
