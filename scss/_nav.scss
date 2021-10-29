@@ -7,12 +7,20 @@ nav {
     width: 100vw;
     border-bottom: 1px solid $gray-background;
     z-index: 10;
+    .logo {
+        @include flexCenter(row, center);
+        img {
+            width: 100px;
+            height: 100%;
+        }
+    }
     h1 {
         font-family: 'Poppins', sans-serif;
         color: $space-cadet;
         font-size: 20px;
         font-weight: 600;
         letter-spacing: 2px;
+        margin-left: -20px
     }
     .nav-links {
         @include flexCenter(row, space-between);
