@@ -48,19 +48,23 @@ nav {
         .nav-links {
             width: 50vw;
         }
+        .logo {
+            padding-left: 100px;
+        }
     }
     @include mobile(800px) {
         .logo {
-            margin-left: -10vw;
+            margin-left: -10%;
+            padding-left: 0px;
         }
         h1 {
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 600;
             letter-spacing: 2px;
         }
         .nav-links {
             // display: none;
-            transform: translateX(100vw);
+            transform: translateX(110vw);
             position: fixed;
             @include flexCenter(column, flex-start);
             top: 10vh;
@@ -97,6 +101,12 @@ nav {
         @include paddingMobile;
         position:unset;
         width:100%;
+    }
+    @include mobile(300px) {
+        .logo {
+            margin-left: -20vw;
+            padding-left: 0px;
+        }
     }
 }
 
