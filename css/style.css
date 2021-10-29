@@ -202,7 +202,6 @@ nav .burger {
   nav .burger {
     display: block;
     cursor: pointer;
-    padding-left: 50px;
   }
   nav .burger img {
     width: 20px;
