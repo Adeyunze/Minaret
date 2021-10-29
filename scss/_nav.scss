@@ -53,16 +53,13 @@ nav {
         }
     }
     @include mobile(800px) {
-        height: 12vh;
+        height: 15vh;
         .logo {
             margin-left: -10%;
             padding-left: 0px;
-            img {
-                width: 120px;
-            }
         }
         h1 {
-            font-size: 15px;
+            font-size: 12px;
             font-weight: 600;
             letter-spacing: 2px;
         }
@@ -98,6 +95,7 @@ nav {
         .burger {
             display: block;
             cursor: pointer;
+            padding-left: 50px;
             img {
                 width: 20px;
             }

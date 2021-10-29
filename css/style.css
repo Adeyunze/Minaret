@@ -130,7 +130,7 @@ nav .burger {
 
 @media (max-width: 800px) {
   nav {
-    height: 12vh;
+    height: 15vh;
     padding: 0px 20px;
     position: unset;
     width: 100%;
@@ -139,11 +139,8 @@ nav .burger {
     margin-left: -10%;
     padding-left: 0px;
   }
-  nav .logo img {
-    width: 120px;
-  }
   nav h1 {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
   }
@@ -202,6 +199,7 @@ nav .burger {
   nav .burger {
     display: block;
     cursor: pointer;
+    padding-left: 50px;
   }
   nav .burger img {
     width: 20px;
