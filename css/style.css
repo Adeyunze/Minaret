@@ -115,8 +115,8 @@ nav .burger {
     letter-spacing: 2px;
   }
   nav .nav-links {
-    -webkit-transform: translateX(80vw);
-            transform: translateX(80vw);
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -133,7 +133,7 @@ nav .burger {
             align-items: center;
     top: 10vh;
     height: 90vh;
-    width: 70vw;
+    width: 100vw;
     background: #1DA1F2;
     right: 0;
     padding-top: 50px;
@@ -995,6 +995,106 @@ footer h3 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+  }
+}
+
+.academic {
+  padding: 0px 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.academic h1 {
+  font-size: 40px;
+  color: #2D3047;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .academic h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .academic {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0px 20px;
+  }
+}
+
+.acad h1 {
+  color: white;
+  font-size: 40px;
+  z-index: 2;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .acad {
+    font-family: "Poppins", sans-serif;
+    background: rgba(0, 0, 0, 0.685);
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-position: center top;
+    background-size: cover;
+    background-image: url(/img/img1.jpg);
+    height: 40vh;
+  }
+  .acad:before {
+    height: 40vh;
+    top: 10vh;
+  }
+  .acad h1 {
+    font-size: 30px;
+    font-weight: 500;
   }
 }
 
