@@ -22,15 +22,18 @@ let moreImages = document.querySelector(".class-images")
 imgArr.forEach((e) => {
     var g = document.createElement('img');
     g.src = `${e}`
+    g.alt = "Gallery image"
     images.appendChild(g);
 });
 independence.forEach((e) => {
     var g = document.createElement('img');
     g.src = `${e}`
+    g.alt = "Gallery image"
     independenceImg.appendChild(g);
 });
 moreImg.forEach((e) => {
     var g = document.createElement('img');
     g.src = `${e}`
+    g.alt = "Gallery image"
     moreImages.appendChild(g);
 });
